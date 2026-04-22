@@ -7,9 +7,12 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: white; font-family: sans-serif; }
-    nav { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; }
-    nav a { font-size: 14px; text-decoration: none; color: black; }
+    nav { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; gap: 12px; }
+    nav a { font-size: 14px; text-decoration: none; color: black; white-space: nowrap; }
     nav a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      nav { flex-direction: column; gap: 8px; padding: 16px; }
+    }
   </style>
 </head>
 <body>
