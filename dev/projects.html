@@ -10,8 +10,13 @@
     nav { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; gap: 12px; }
     nav a { font-size: 14px; text-decoration: none; color: black; white-space: nowrap; }
     nav a:hover { text-decoration: underline; }
+    .dev-banner-wrap { overflow: hidden; white-space: nowrap; padding: 24px 0; }
+    .dev-banner { display: inline-block; font-size: 48px; font-weight: bold; animation: flash 1s step-start infinite, scroll 8s linear infinite; }
+    @keyframes flash { 0%, 100% { color: black; } 50% { color: red; } }
+    @keyframes scroll { 0% { transform: translateX(-100%); } 100% { transform: translateX(100vw); } }
     @media (max-width: 480px) {
       nav { flex-direction: column; gap: 8px; padding: 16px; }
+      .dev-banner { font-size: 28px; }
     }
   </style>
 </head>
@@ -20,5 +25,6 @@
     <a href="index.html">Home</a>
     <span style="font-size:14px;">Projects</span>
   </nav>
+  <div class="dev-banner-wrap"><h1 class="dev-banner">DEVELOPMENT SITE &nbsp;&nbsp;&nbsp; DEVELOPMENT SITE &nbsp;&nbsp;&nbsp; DEVELOPMENT SITE &nbsp;&nbsp;&nbsp; DEVELOPMENT SITE &nbsp;&nbsp;&nbsp; DEVELOPMENT SITE</h1></div>
 </body>
 </html>
