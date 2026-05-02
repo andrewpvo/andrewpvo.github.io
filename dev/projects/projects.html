@@ -8,8 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: white; font-family: sans-serif; }
     nav { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; gap: 12px; }
-    nav a { font-size: 14px; text-decoration: none; color: black; white-space: nowrap; }
-    nav a:hover { text-decoration: underline; }
+    nav a { font-size: 14px; text-decoration: underline; color: black; white-space: nowrap; }
     main { display: flex; justify-content: center; padding: 48px 24px; }
     .projects { max-width: 600px; width: 100%; }
     .projects h1 { font-size: 24px; margin-bottom: 24px; }
@@ -26,6 +25,9 @@
 <body>
   <nav>
     <a href="../index.html">Home</a>
+    <div style="display:flex;gap:16px;">
+      <a href="../gallery/gallery.html">Gallery</a>
+    </div>
   </nav>
   <main>
     <section class="projects">
