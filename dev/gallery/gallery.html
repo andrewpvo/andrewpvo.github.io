@@ -12,6 +12,14 @@
     main { display: flex; justify-content: center; padding: 48px 24px; }
     .gallery { max-width: 600px; width: 100%; }
     .gallery h1 { font-size: 24px; margin-bottom: 24px; }
+    .gallery-grid { display: flex; flex-direction: row; gap: 24px; }
+    figure { margin: 0; flex: 1; }
+    figure img { width: 100%; max-width: 260px; height: 320px; object-fit: cover; display: block; }
+    figcaption { font-size: 14px; color: #555; margin-top: 8px; }
+    @media (max-width: 480px) {
+      .gallery-grid { flex-direction: column; }
+      figure img { max-width: 100%; }
+    }
     @media (max-width: 480px) {
       nav { flex-direction: column; gap: 8px; padding: 16px; }
       .gallery h1 { font-size: 20px; }
@@ -28,6 +36,16 @@
   <main>
     <section class="gallery">
       <h1>Gallery</h1>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/ProfessionalHeadshot_Color.jpg" alt="Professional headshot">
+          <figcaption>This is me.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/BaileyInBed.jpg" alt="Bailey in bed">
+          <figcaption>Bailey, my childhood dog.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 </body>
